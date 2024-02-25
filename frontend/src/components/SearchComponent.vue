@@ -2,8 +2,8 @@
   import {useSearchInfoStore} from "@/stores/searchInfoStore";
   import {storeToRefs} from "pinia";
 
-  const searchInfoStore = useSearchInfoStore()
-  const { result, loading, searchTermValue } = storeToRefs(searchInfoStore)
+  const searchInfoStore = useSearchInfoStore();
+  const { searchTermValue } = storeToRefs(searchInfoStore);
 </script>
 
 <template>
