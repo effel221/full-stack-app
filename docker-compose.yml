@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server-app:
+    build:
+      context: server
+    ports:
+      - "8081:8081"
+
+  frontend-app:
+    build:
+      context: frontend
+    ports:
+      - "8080:35353"

@@ -33,7 +33,7 @@ const graphQLPlayground: Object = expressPlayground;
 const defaultPlayground: Function  = graphQLPlayground["default"]
 app.get('/playground', defaultPlayground({ endpoint: '/graphql' }))
 
-const PORT = 8000
+const PORT = 8081
 
 app.listen(PORT)
 

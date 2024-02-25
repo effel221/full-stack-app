@@ -8,7 +8,7 @@
 
 <template>
   <div class="activities-component">
-    <h3>Activites</h3>
+    <h3>Activities</h3>
     <div v-for="activity in result?.getActivitiesBySearch" :key="activity.id" class="activities-component-item">
       <h4>{{activity.title}} <span class="activities-component-item-offer" v-if="activity.specialOffer">Special Offer!!!</span></h4>
       <p><strong>Price:</strong> {{activity.price}}</p>

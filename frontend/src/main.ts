@@ -4,12 +4,13 @@ import { ApolloClient, InMemoryCache } from '@apollo/client/core'
 import {createApp, provide, h} from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
+import * as process from "process";
 
 const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
     cache,
-    uri: 'http://localhost:8000/graphql',
+    uri: 'http://localhost:8081/graphql',
 })
 
 const app = createApp({

@@ -1,4 +1,4 @@
-import {ref, computed, UnwrapRef, Ref} from 'vue'
+import {ref} from 'vue'
 import { defineStore } from 'pinia'
 import {useQuery} from "@vue/apollo-composable";
 import {GET_ACTIVITIES_WITH_SEARCH} from "@/queries/queries";
@@ -8,9 +8,9 @@ type SearchTerm = {
 }
 
 export const useSearchInfoStore = defineStore('searchInfo', () => {
-  const searchTermValue: Ref<UnwrapRef<string>> = ref('')
-  const enableFetch: Ref<UnwrapRef<boolean>> = ref(false)
-  const variables: Ref<UnwrapRef<SearchTerm>> = ref({searchTerm: ''})
+  const searchTermValue = ref('')
+  const enableFetch = ref(false)
+  const variables = ref({searchTerm: ''})
 
   const { result } = useQuery(GET_ACTIVITIES_WITH_SEARCH,
       variables, {enabled: enableFetch})
