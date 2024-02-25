@@ -1,1 +1,1 @@
-# full-stuck-app
+# full-stack-app
