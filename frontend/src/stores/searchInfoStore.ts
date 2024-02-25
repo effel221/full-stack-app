@@ -10,7 +10,7 @@ type SearchTerm = {
 export const useSearchInfoStore = defineStore('searchInfo', () => {
   const searchTermValue: Ref<UnwrapRef<string>> = ref('')
   const enableFetch: Ref<UnwrapRef<boolean>> = ref(false)
-  const variables: Ref<UnwrapRef<SearchTerm>> = ref({searchTerm: 'tour'})
+  const variables: Ref<UnwrapRef<SearchTerm>> = ref({searchTerm: ''})
 
   const { result } = useQuery(GET_ACTIVITIES_WITH_SEARCH,
       variables, {enabled: enableFetch})
