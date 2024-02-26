@@ -8,4 +8,5 @@ Command to run whole applications:
 docker compose up --build
 ```
 
-link to application in browser: localhost:8081
+link to application in browser: 
+<h6>localhost:8081</h6>
