@@ -1,4 +1,4 @@
-# Simple node Vue frontend
+# Simple node graphgl server
 
 To run app first needed to have node (20 + version)
 
@@ -9,13 +9,14 @@ node install
 ```
 then to run server:
 ```sh
-node run dev
+node run start
 ```
-Link to application in browser:
+Link to application in browser: 
 
-<h6>localhost:35353</h6>
+<h6>localhost:8081</h6>
 
 command to run testing:
 ```sh
-node run test:unit
+node run test
 ```
+
